@@ -1,12 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbar{
+  box-shadow: -42px -29px 42px 46px rgb(0 0 0 / 10%)
+}
 .navdiv{
-    height: 72px;
-    box-shadow: -42px -29px 42px 46px rgb(0 0 0 / 10%)
+    height: 72px;   
 }
 .nav-link{
-    font-weight: 600;font-size: 20px;
+    font-weight: 500;font-size: 20px;
 }
 .abouth1{
-    text-align: center;
+    
 }
 #navbarScroll a:hover{
     color: #ffc83e;
@@ -14,11 +19,6 @@
 #navbarScroll a{
     color: black;
 }
-
-
-
-
-
 
 .card-li{
     display: flex;
@@ -87,14 +87,20 @@
 }
 .card{
     width: 18rem;
-   
     box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 38%);
      border-radius: .75rem;
-      height: 411px;
       align-items: center;
 }
-
-
+.card-li:hover{
+  -ms-transform: scale(.5); /* IE 9 */
+  -webkit-transform: scale(.5); /* Safari 3-8 */
+  transform: scale(1.11); 
+  transition-duration: .5s;
+  transition-delay: .1s;
+}
+.card-title{
+  text-align: center;
+}
 
 /* footer */
 
@@ -117,7 +123,7 @@
   }
   
   #footer .footer-top .footer-info h3 {
-    font-size: 24px;
+    font-size: 16px;
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
@@ -148,7 +154,7 @@
   }
   
   #footer .footer-top .social-links a:hover {
-    background: #5c9f24;
+    background: #ffc83e;
     color: #fff;
     text-decoration: none;
   }
@@ -173,8 +179,8 @@
   
   #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #8ed851;
-    font-size: 18px;
+    color: #ffc83e;
+    font-size: 16px;
     line-height: 1;
   }
   
@@ -189,6 +195,7 @@
   }
   
   #footer .footer-top .footer-links ul a {
+    padding-left: 5px;
     color: #fff;
     transition: 0.3s;
     display: inline-block;
@@ -196,7 +203,7 @@
   }
   
   #footer .footer-top .footer-links ul a:hover {
-    color: #81d33d;
+    color: #ffc83e
   }
   
   #footer .footer-top .footer-newsletter form {
@@ -222,14 +229,14 @@
     background: none;
     font-size: 16px;
     padding: 0 20px;
-    background: #5c9f24;
+    background: #ffc83e;
     color: #fff;
     transition: 0.3s;
     border-radius: 0 4px 4px 0;
   }
   
   #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-    background: #6ab82a;
+    background: #ffc83e;
   }
   
   #footer .copyright {
@@ -253,6 +260,13 @@
 #message1{
   color: red;
 }
+.btn{
+background-color: #ffc83e;
+border-color: #ffc83e;
+}
+.btn:hover{
+  background-color: #ffc83e;
+}
 
   
 @media only screen and (max-device-width: 767px) {
@@ -261,9 +275,8 @@ text-align: center;
     }
   }
     
-@media only screen and (max-device-width: 991px) {
-    .bttxt {
-
+@media only screen and (max-device-width: 1227) {
+    .proimg {background-color: #ffc83e;
     }
   }
 
