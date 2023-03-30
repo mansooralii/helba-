@@ -1,6 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 .navbar{
   box-shadow: -42px -29px 42px 46px rgb(0 0 0 / 10%)
 }
@@ -24,12 +32,7 @@ html {
     display: flex;
     justify-content: center;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
-}
+
 
 .main-content{
     display: flex;
@@ -78,13 +81,16 @@ html {
     justify-content: center;
     width: 50%;
 }
-.btt:hover{
+#btt:hover{
     background-color:#e4000e;
 }
 .btndiv{
     display: flex;
     justify-content: center;
 }
+.h5g{
+  color: #9e9e9e;
+  text-align: center;}
 .card{
     width: 18rem;
     box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 38%);
@@ -102,7 +108,9 @@ html {
   text-align: center;
 }
 
-/* footer */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 
 #footer {
     background: #0f0f0f;
@@ -185,13 +193,13 @@ html {
   }
   
   #footer .footer-top .footer-links ul li {
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     align-items: center;
   }
   
   #footer .footer-top .footer-links ul li:first-child {
-    padding-top: 0;
+    padding: 10px 0;
   }
   
   #footer .footer-top .footer-links ul a {
@@ -254,9 +262,6 @@ html {
     line-height: 26px;
   }
 
- 
- 
- 
 #message1{
   color: red;
 }
@@ -267,6 +272,8 @@ border-color: #ffc83e;
 .btn:hover{
   background-color: #ffc83e;
 }
+
+
 
   
 @media only screen and (max-device-width: 767px) {

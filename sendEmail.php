@@ -18,22 +18,23 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     $mail->isSMTP();
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
-    $mail->Username = "faizmppkl@gmail.com";
-    $mail->Password = 'evkzofvzmzmesjrn';
+    $mail->Username = "enquiryinfofsd@gmail.com";
+    $mail->Password = 'ttxtthqplznwoljt';
     $mail->Port = 465;
     $mail->SMTPSecure = "ssl";
 
     //email settings
     $mail->isHTML(true);
-    $mail->setFrom($email, $name);
-    $mail->addAddress("faizmppkl@gmail.com");
-    $mail->Subject = ("$email ($subject)");
-    $mail->Body = "name:" .$name . "<br>".
-                  "phone:" .$phone ."<br>".  
-                  "message:" .$message; 
+    $mail->setFrom($email);
+    $mail->addAddress("helba.foods@gmail.com");
+    $mail->Subject = ("$name");
+    $mail->Body = "Name:  " .$name . "<br>".
+                  "Phone:  " .$phone ."<br>".  
+                  "Email:  " .$email ."<br>".  
+                  "Message:  " .$message; 
 
     
-
+ 
     if($mail->send()){
         $status = "success";
         $response = "Email is sent!";
@@ -46,5 +47,3 @@ if(isset($_POST['name']) && isset($_POST['email'])){
 
     exit(json_encode(array("status" => $status, "response" => $response)));
 }
-
-?>
